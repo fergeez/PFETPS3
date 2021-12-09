@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 
 class DatabaseCategorias {
-  //Estas líneas permiten inicializar correctamente la instancia de la conexión a la base.
   late FirebaseFirestore firestore;
   initiliase() {
     firestore = FirebaseFirestore.instance;
