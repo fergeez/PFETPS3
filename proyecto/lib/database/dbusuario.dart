@@ -1,15 +1,14 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-//Se hará referencia a esta clase en el archivo dart en el cual se desea realizar consultas hacia la base.
+
 class DatabaseUsuarios {
-  //Estas líneas permiten inicializar correctamente la instancia de la conexión a la base.
   late FirebaseFirestore firestore;
   initiliase() {
     firestore = FirebaseFirestore.instance;
   }
 
-  //Función para CREAR nuevos registros (Este SI SE ESTÁ UTILIZANDO)
+  
   Future<void> create(String name, String lastName, String user, String email,
       String pass) async {
     try {
