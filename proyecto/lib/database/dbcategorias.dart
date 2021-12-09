@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-//Se hará referencia a esta clase en el archivo dart en el cual se desea realizar consultas hacia la base.
+
 class DatabaseCategorias {
   //Estas líneas permiten inicializar correctamente la instancia de la conexión a la base.
   late FirebaseFirestore firestore;
@@ -8,7 +8,7 @@ class DatabaseCategorias {
     firestore = FirebaseFirestore.instance;
   }
 
-  //Función para LEER TODOS los registros
+  
   Future<List> read() async {
     QuerySnapshot querySnapshot;
     List docs = [];
