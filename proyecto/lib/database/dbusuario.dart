@@ -24,7 +24,7 @@ class DatabaseUsuarios {
     }
   }
 
-  //Función para LEER TODOS los registros (NO se está utilizando)
+  
   Future<List> read() async {
     QuerySnapshot querySnapshot;
     List docs = [];
